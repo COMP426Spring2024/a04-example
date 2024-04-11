@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hunger Games!</title>
+    <link rel="stylesheet" href="./hg.css">
+    <script type="module" src="./hg_model.js"></script>
+    <script type="module" src="./hg.js"></script>
+</head>
+
+<body>
+
+    <div id="lineup_editor">
+        <h1>Lineup Editor</h1>
+        <table id="lineup_table">
+            <thead><tr><th>Set Name</th><th>Ingredient A</th><th>Ingredient B</th><th>Ingredient C</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><input type='text' name='set_name'></td>
+                    <td><input type='text' name='ing_a'></td>
+                    <td><input type='text' name='ing_b'></td>
+                    <td><input type='text' name='ing_c'></td>
+                    <td><button id='btn_make_set'>+</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button id="btn_start_matchups">Start Matchups</button>
+        </div>
+    </div>
+
+    <div id="standings">
+        <h1>Standings</h1>
+        <h3>More Likely To Make</h3>
+        <table id="make_standings_table">
+            <thead><tr><th>Set Name</th><th>Wins</th><th>Losses</th><th>Draws</th></tr></thead>
+            <tbody></tbody>
+        </table>
+        <h3>More Likely To Want</h3>
+        <table id="taste_standings_table">
+            <thead><tr><th>Set Name</th><th>Wins</th><th>Losses</th><th>Draws</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="matchup">
+        <h1><span id="matchup_set_a"></span> vs. <span id="matchup_set_b"></span></h1>
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr><td></td><td class='matchup_a' id="matchup_a_title"></td><td class='matchup_b' id="matchup_b_title"></td></tr>
+                <tr><td></td>
+                    <td class='matchup_a'>
+                        <img class='matchup_img' id="matchup_a_img">
+                    </td>
+                    <td class='matchup_b'>
+                        <img class='matchup_img' id="matchup_b_img">
+                    </td>
+                </tr>
+                <tr>
+                    <td>More Likely To Want:</td><td id="a_taste"></td><td id="b_taste"></td>
+                </tr>
+                <tr>
+                    <td>More Likely To Make:</td><td id="a_make"></td><td id="b_make"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button id="record_and_advance">Record Results And Advance</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+
+.matchup_a {
+    background-color: yellow;
+}
+
+.matchup_b {
+    background-color: pink;
+}
+
+.matchup_img {
+    width: 250px;
+    height: 250px;
+}
+
+.tie {
+    background-color: lightgray;
+}
+
+.win {
+    background-color: darkgreen;
+}
+
+.lose {
+    background-color: transparent;
+}
